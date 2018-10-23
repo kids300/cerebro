@@ -215,16 +215,22 @@ class Cerebro extends Component {
       }
       // Lightweight vim-mode: cmd/ctrl + jklo
       switch (event.keyCode) {
-        case 74:
+        case 74: // ctrl+j
           keyActions.arrowDown()
           break
-        case 75:
+        case 75: // ctrl+k
           keyActions.arrowUp()
           break
-        case 76:
+        case 76: // ctrl+l
           keyActions.arrowRight()
           break
-        case 79:
+        case 78: // ctrl+n
+          keyActions.arrowDown()
+          break
+        case 80: // ctrl+p
+          keyActions.arrowUp()
+          break
+        case 79: // ctrl+o
           keyActions.select()
           break
       }
